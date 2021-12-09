@@ -1,31 +1,285 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section styles {
+    <link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+}
+@section Scripts
+    {
+    <script type="text/javascript"
+            charset="utf8"
+            src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var myval = $('input[type="radio"][name="gender"]:checked').val();
+            console.log(myval);
+        });
+        $('#SubTelecon').click(function (e) {
+            var url = '/Consultation/BookAppointment'; 
+            var postObj = {
+                "FirstName": $('#first_name').val(),
+                "MiddleName": $('#middle_name').val(),
+                "Surname": $('#surname').val(),
+                "DateSlot": $('#SlotDate').val(),
+                "TimeSlot": $('#SlotTime').val(),
+                "AppointmentType": $('#appointment_type').val(),
+                "PhoneNumber": $('#telephone').val(),
+                "Email": $('#email').val(),
+                "gender": $('input[type="radio"][name="gender"]:checked').val(),
+                "paymentMethod": $('input[type="radio"][name="paymentOption"]:checked').val(),
+                "MethodOfContact": $('input[type="radio"][name="contactmethod"]:checked').val(),
+            };
+            console.log(postObj);
+            customPost("Proceed to Regenerate new Certificate?", url, postObj, 'PatientCertModal', 'PatientCertModal',
+                'PATIENT INFORMATION', populateCompleted);
+        });
+ 
+        function CustomAlert(title, text, type) {
+            swal({
+                title: title,
+                text: text,
+                type: type,
+                showCancelButton: true,
+                showConfirmButton: true,
+                confirmButtonClass: 'btn btn-quickSWap'
+            });
+        }
+        function customPost(text, url, postObj, modalName, formName, actionName, populatingClass) {
+            swal({
+                title: "ARE YOU SURE?",
+                text: text,
+                type: 'warning',
+                showCancelButton: true,
+                showConfirmButton: true,
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger',
+                confirmButtonText: 'Yes!',
+                closeOnConfirm: false,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    $.ajax({
+                        url: '',
+                        data: JSON.stringify(postObj),
+                        contentType: "application/json;charst=utf-8",
+                        dataType: 'JSON',
+                        type: 'POST',
+                        success: function (data) {
+                            if (data.status === "success") {
+                                if (modalName !== null) {
+                                    $('#' + modalName).modal('hide');
+                                }
+                                swal("Book!", "Appointment Confirmed.!", "success");
+                                $('#' + modalName).modal('hide');
+                                fetchBookings();
+                                populatBookings();
+                                //$(':input', '#' + formName)
+                                //    .not(':button, :submit, :reset, :hidden')
+                                //    .val('')
+                                //    .prop('checked', false)
+                                //    .prop('selectedIndex', 0);
+                                //populatingClass();
+                                //CustomAlert(actionName, data.Message, data.status);
+                            } else {
+                                swal("Book!", "Appointment Confirmed.!", "success");
+                                $('#' + modalName).modal('hide');
+                                fetchBookings();
+                                populatBookings();
+                            }
+                        }
+                    });
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+                } else {
+                    swal("Cancelled", "Your have cancelled :)", "error");
+                }
+            });
+        }
+    </script>
+}
+<section class="section-form py-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-6 bg-white py-5">
+                <div class="row">
+                    <div class="col-xxl-9 col-xl-9 col-md-10 col-sm-12 mx-auto">
+                        <form class="form" autocomplete="on"">
+                            @*<input name="_token" type="hidden" value="cdlXdbv3WHCsKhpwDZ0vRRNZBuXNWRdR5JnzGwhU">
+                            <div id="appointmentForm_forms_flash"></div>*@
+                            <fieldset>
+                                <legend class="form-custom-title">Personal information</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="text" id="first_name" name="first_name" placeholder="First name">
+                                            <label class="form-label" for="first_name">First name</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="first_name"></div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="text" id="middle_name" name="middle_name" placeholder="Middle name">
+                                            <label class="form-label" for="middle_name">Middle name</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="middle_name"></div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="text" id="surname" name="surname" placeholder="surname">
+                                            <label class="form-label" for="surname">Surname</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="surname"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <p class="form-custom-subtitle">Gender</p>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" id="genderMale" name="gender" value="Male">
+                                                <label class="form-check-label gender_male_radio" for="genderMale">Male</label>
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" id="genderFemale" name="gender" value="Female">
+                                                <label class="form-check-label gender_female_radio" for="genderFemale">Female</label>
+                                            </div>
+                                            <div class="mt-3 text-danger small" id="validate_for_gender" data-validate-for="gender"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title">Appointment Slot</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="date" id="SlotDate" name="slot_date">
+                                            <label class="form-label" for="slot_date">Date</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="slot_date"></div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="time" id="SlotTime" name="slot_time">
+                                            <label class="form-label" for="slot_time">Time</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="slot_time"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title">Appointment details</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3 form-floating">
+                                            <select class="form-select" id="appointment_type" name="appointment_type">
+                                                <option value="" selected="">Select type of appointment</option>
+                                                <option value="Doctor">Doctor</option>
+                                                <option value="Lab and other services">Lab &amp; Other Services</option>
+                                                <option value="Checkups Mobile Clinic">Checkups Mobile Clinic</option>
+                                            </select>
+                                            <label class="form-label" for="appointment_type">Appointment Type</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="appointment_type"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title">Contact information</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="tel" id="telephone" name="telephone" placeholder="Phone Number / Whatsapp Number (Preferred)" inputmode="tel" data-request="onPhone" data-track-input>
+                                            <label class="form-label" for="telephone">Phone Number</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="telephone"></div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="email" id="email" name="email" placeholder="Email" inputmode="email">
+                                            <label class="form-label" for="email">Email</label>
+                                            <div class="mt-3 text-danger small" data-validate-for="email"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title">Payment options (payments to be made before booking)</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="paymentOptionMpesa" name="paymentOption" value="mpesa">
+                                                <label class="form-check-label" for="paymentOptionMpesa">M-PESA</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="paymentOptionCash" name="paymentOption" value="cash">
+                                                <label class="form-check-label" for="paymentOptionCash">Cash (KSh, Euro, USD)</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="paymentOptionInsuranceCover" name="paymentOption" value="Insurance Cover">
+                                                <label class="form-check-label" for="paymentOptionInsuranceCover">Insurance Cover (Requires copy of membership card and Signed Claim form)</label>
+                                            </div>
+                                        </div>
+                                        <div id="insuranceCompaniesHolders" class="mb-3 d-none">
+                                            <select class="form-select">
+                                                <option value="" selected="">Please select your insurance here</option>
+                                                <option value="1">Insurance 1</option>
+                                                <option value="2">Insurance 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title">Please select method of contact</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="whatsapp_video_call" name="contactmethod" value=">Whatsapp Video Call">
+                                                <label class="form-check-label" for="whatsapp_video_call">Whatsapp Video Call</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="voice_call" name="contactmethod" value="Voice Call">
+                                                <label class="form-check-label" for="voice_call">Voice Call</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="zoom" name="contactmethod" value="Zoom">
+                                                <label class="form-check-label" for="zoom">Zoom</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="form-custom-title"></legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <div style="max-Width: '100%',position: 'relative',overflow: 'auto',max-height: 100,padding-top:'10px',padding-bottom:'10px',border-style:" solid ",border: '0.5px',border-color: '#022c5b'">
+                                                <input type="checkbox" id="agree" onChange={handleCheck} />
+                                                <label htmlFor="agree">I agree to Consent Terms</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                        <fieldset>
+                            <legend class="form-custom-title"></legend>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="col-sm-offset-3 col-md-6 form-group">
+                                        <button type="submit" id="SubTelecon" class="btn btn-primary btn-lg btn-block">Submit Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</section>

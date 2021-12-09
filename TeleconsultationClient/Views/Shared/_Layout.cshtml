@@ -1,42 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <meta charset="utf-8">
+    <title>CheckUps Medical Hub - Book Your Appointment</title>
+    <meta name="description" content="Enter details below">
+    <meta name="title" content="Schedule an Appointment">
+    <meta name="author" content="CheckUps Medical Hub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="themes/checkupsmedicalhub/assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="twitter:title" content="Checkups Medical Hub - Book Your Appointment">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Enter details below">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Enter details below">
+    <meta property="og:title" content="Checkups Medical Hub - Book Your Appointment">
+    <meta property="og:image" content="storage/app/media/quickFacts-banner.png">
+    <meta name="twitter:image" content="storage/app/media/quickFacts-banner.png">
+    <meta name="twitter:description" content="Enter details below">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
+    <link rel="prefetch" href="https://registrationapi.checkupsmed.com:1000/api/v1/checkups/setup/insurances">
+    <link rel="apple-touch-icon" sizes="57x57" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href=".../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../themes/checkupsmedicalhub/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../themes/checkupsmedicalhub/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../themes/checkupsmedicalhub/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../themes/checkupsmedicalhub/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../themes/checkupsmedicalhub/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../themes/checkupsmedicalhub/assets/images/favicon/manifest.json">
+
+    <link href="~/Scripts/bower_components/jquery-ui/themes/black-tie/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Scripts/adminlte/components/Ionicons/css/ionicons.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="~/Scripts/adminlte/components/font-awesome/css/font-awesome.min.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="~/Scripts/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/Scripts/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <link href="~/Content/select2.min.css" rel="stylesheet" />
+
+    <link href="../combine/107b5de77dd4362164f5ec1b64737b2d-1638268957.css" rel="stylesheet">
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        @Html.Partial("_Header")
+
+        @RenderBody()
+
+        @Html.Partial("_Footer")
+
+        <!-- Add the sidebar's background. This div must be placed
+        immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
     @RenderSection("scripts", required: false)
+    <script src="~/Content/select2.js"></script>
+
+    <script src="combine/7710e7572ce837f7615e4428ad92db5e-1638271125"></script>
+    <script src="plugins/martin/forms/assets/js/inline-errors.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>*@
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    @*<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>*@
+    <script language="javascript" type="text/javascript">
+        window.onbeforeunload = function () {
+        }
+    </script>
+
 </body>
 </html>

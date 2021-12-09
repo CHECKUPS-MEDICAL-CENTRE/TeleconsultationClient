@@ -120,13 +120,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ConsultationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResponseMessage.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="combine\107b5de77dd4362164f5ec1b64737b2d-1638268957.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -135,8 +138,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="plugins\martin\forms\assets\js\inline-errors.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="combine\7710e7572ce837f7615e4428ad92db5e-1638271125" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -148,6 +153,37 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="storage\app\media\quickFacts-banner.png" />
+    <Content Include="storage\app\uploads\public\c36\f74\51b\thumb__383_365_0_0_auto.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Black.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Bold.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Light.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Medium.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Regular.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-SemiLight.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Thin.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900.html" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\android-icon-192x192.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-114x114.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-120x120.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-144x144.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-152x152.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-180x180.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-57x57.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-60x60.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-72x72.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\apple-icon-76x76.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\favicon-16x16.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\favicon-32x32.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\favicon-96x96.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\ms-icon-144x144.png" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\logo-minimal.svg" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\logo.svg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,10 +198,33 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Black.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Bold.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Light.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Medium.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Regular.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-SemiLight.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\chronica-pro\ChronicaPro-Thin.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="themes\checkupsmedicalhub\assets\fonts\fontawesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="themes\checkupsmedicalhub\assets\images\favicon\manifest.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Consultation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
