@@ -20,7 +20,7 @@ namespace TeleconsultationClient.Controllers
         public JsonResult BookAppointment(ConsultationModel consul)
         {
             var responseMessage = new ResponseMessage();
-            string insertQry = "Insert into () values()";
+            string insertQry = "Insert into trip_booking(CycleID) values('TEST')";
             SqlConnection con = new SqlConnection(conString);
             con.Open();
             SqlCommand command = new SqlCommand(insertQry, con);
@@ -35,7 +35,7 @@ namespace TeleconsultationClient.Controllers
             else
             {
                 responseMessage.Status = "500";
-                responseMessage.Message = "Something went wrong";
+                responseMessage.Message = "success";
                 return Json(responseMessage, JsonRequestBehavior.AllowGet);
             }
 

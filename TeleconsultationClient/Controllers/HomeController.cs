@@ -26,5 +26,10 @@ namespace TeleconsultationClient.Controllers
 
             return View();
         }
+        public ActionResult ConsentForm()
+        {
+            return View();
+        }
+
     }
 }
