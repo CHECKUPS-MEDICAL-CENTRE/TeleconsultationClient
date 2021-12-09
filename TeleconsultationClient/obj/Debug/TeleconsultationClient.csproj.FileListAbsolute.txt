@@ -1,0 +1,157 @@
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.dll.config
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.pdb
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.exe
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.exe.config
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.rsp
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.exe
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.exe.config
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.rsp
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.AppContext.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Collections.Immutable.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Console.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Globalization.Calendars.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.Compression.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.FileSystem.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Net.Http.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Net.Sockets.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Reflection.Metadata.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.ValueTuple.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XPath.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.exe
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.exe.config
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.rsp
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\VBCSCompiler.exe
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\roslyn\VBCSCompiler.exe.config
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Antlr3.Runtime.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.Web.Infrastructure.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Newtonsoft.Json.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Helpers.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Mvc.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Optimization.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Razor.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Deployment.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Razor.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\WebGrease.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Helpers.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Mvc.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Optimization.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Razor.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Deployment.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Razor.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Newtonsoft.Json.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Antlr3.Runtime.pdb
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.csproj.AssemblyReference.cache
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.csproj.CoreCompileInputs.cache
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.csproj.CopyComplete
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.dll
+E:\CHECKUPS PROJECTS\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.pdb
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.dll.config
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\TeleconsultationClient.pdb
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.exe
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.exe.config
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csc.rsp
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.exe
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.exe.config
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\csi.rsp
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.AppContext.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Collections.Immutable.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Console.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Globalization.Calendars.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.Compression.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.FileSystem.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Net.Http.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Net.Sockets.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Reflection.Metadata.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.ValueTuple.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XPath.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.exe
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.exe.config
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\vbc.rsp
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\VBCSCompiler.exe
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\roslyn\VBCSCompiler.exe.config
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Antlr3.Runtime.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.Web.Infrastructure.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Newtonsoft.Json.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Helpers.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Mvc.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Optimization.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Razor.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Deployment.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Razor.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\WebGrease.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Helpers.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Mvc.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Optimization.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.Razor.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Deployment.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\System.Web.WebPages.Razor.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Newtonsoft.Json.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Antlr3.Runtime.pdb
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.csproj.CoreCompileInputs.cache
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.csproj.CopyComplete
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.dll
+D:\Checkups\TeleconsultationClient\TeleconsultationClient\obj\Debug\TeleconsultationClient.pdb
